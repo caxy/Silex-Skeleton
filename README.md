@@ -54,8 +54,6 @@ What's inside?
 
 The Silex Skeleton is configured with the following service providers:
 
-* [UrlGeneratorServiceProvider][] - Provides a service for generating URLs for
-  named routes.
 * [ServiceControllerServiceProvider][] - As your Silex application grows, you
   may wish to begin organizing your controllers in a more formal fashion.
   Silex can use controller classes out of the box, but with a bit of work,
@@ -65,6 +63,7 @@ The Silex Skeleton is configured with the following service providers:
 * [WebProfilerServiceProvider][] - Enable the Symfony web debug toolbar and
   the Symfony profiler in your Silex application when developing.
 * [MonologServiceProvider][] - Enable logging in the development environment.
+* [VarDumperServiceProvider[] - Integrates Twig and the VarDumper component.
 
 Read the [Providers][] documentation for more details about Silex Service
 Providers.
@@ -72,10 +71,10 @@ Providers.
 Enjoy!
 
 [Composer]: http://getcomposer.org/
-[Documentation]: http://silex.sensiolabs.org/documentation
-[UrlGeneratorServiceProvider]: http://silex.sensiolabs.org/doc/providers/url_generator.html
-[ServiceControllerServiceProvider]: http://silex.sensiolabs.org/doc/providers/service_controller.html
-[TwigServiceProvider]: http://silex.sensiolabs.org/doc/providers/twig.html
+[Documentation]: https://silex.readthedocs.org/en/latest/index.html
+[ServiceControllerServiceProvider]: https://silex.readthedocs.org/en/latest/providers/service_controller.html
+[TwigServiceProvider]: https://silex.readthedocs.org/en/latest/providers/twig.html
 [WebProfilerServiceProvider]: http://github.com/silexphp/Silex-WebProfiler
-[MonologServiceProvider]: http://silex.sensiolabs.org/doc/providers/monolog.html
-[Providers]: http://silex.sensiolabs.org/doc/providers.html
+[MonologServiceProvider]: https://silex.readthedocs.org/en/latest/providers/monolog.html
+[VarDumperServiceProvider]: https://silex.readthedocs.org/en/latest/providers/var-dumper.html
+[Providers]: https://silex.readthedocs.org/en/latest/providers.html
