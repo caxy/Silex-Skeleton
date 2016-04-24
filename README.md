@@ -33,6 +33,14 @@ COMPOSER_PROCESS_TIMEOUT=0 composer run
 
 Then, browse to <http://localhost:8888/>.
 
+Running tests
+-------------
+
+```bash
+cd path/to/install
+composer test
+```
+
 Getting started with Silex
 --------------------------
 
