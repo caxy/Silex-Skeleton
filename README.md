@@ -18,6 +18,15 @@ composer create-project caxy/silex-skeleton path/to/install
 
 Composer will create a new Silex project under the path/to/install directory.
 
+If your application will serve static assets using the PHP built-in web server
+during development, you should add these lines to the top of `web/index_dev.php`:
+
+```php
+if (php_sapi_name() === 'cli-server' && is_file(__DIR__.preg_replace('#(\?.*)$#', '', $_SERVER['REQUEST_URI']))) {
+    return false;
+}
+```
+
 Browsing the Demo Application
 -----------------------------
 
@@ -28,7 +37,7 @@ command:
 
 ```bash
 cd path/to/install
-COMPOSER_PROCESS_TIMEOUT=0 composer run
+COMPOSER_PROCESS_TIMEOUT=86400 composer run
 ```
 
 Then, browse to <http://localhost:8888/>.
@@ -59,11 +68,16 @@ The Silex Skeleton is configured with the following service providers:
   Silex can use controller classes out of the box, but with a bit of work,
   your controllers can be created as services, giving you the full power of
   dependency injection and lazy loading.
+* [HttpFragmentServiceProvider][] - Provides fragment rendering in templates.
+* [AssetServiceProvider][] - Provides versioned URLs of front end assets.
 * [TwigServiceProvider][] - Provides integration with the Twig template engine.
+
+In development mode, these service providers support profiling and debugging:
+
 * [WebProfilerServiceProvider][] - Enable the Symfony web debug toolbar and
   the Symfony profiler in your Silex application when developing.
 * [MonologServiceProvider][] - Enable logging in the development environment.
-* [VarDumperServiceProvider[] - Integrates Twig and the VarDumper component.
+* [VarDumperServiceProvider][] - Integrates Twig and the VarDumper component.
 
 Read the [Providers][] documentation for more details about Silex Service
 Providers.
@@ -73,6 +87,8 @@ Enjoy!
 [Composer]: http://getcomposer.org/
 [Documentation]: https://silex.readthedocs.org/en/latest/index.html
 [ServiceControllerServiceProvider]: https://silex.readthedocs.org/en/latest/providers/service_controller.html
+[HttpFragmentServiceProvider]: http://silex.readthedocs.org/en/stable/providers/http_fragment.html
+[AssetServiceProvider]: https://silex.readthedocs.org/en/latest/providers/asset.html
 [TwigServiceProvider]: https://silex.readthedocs.org/en/latest/providers/twig.html
 [WebProfilerServiceProvider]: http://github.com/silexphp/Silex-WebProfiler
 [MonologServiceProvider]: https://silex.readthedocs.org/en/latest/providers/monolog.html
