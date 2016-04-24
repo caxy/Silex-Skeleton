@@ -1,8 +1,9 @@
-Silex Skeleton
-==============
+Caxy Silex Skeleton
+===================
 
-Welcome to the Silex Skeleton - a fully-functional Silex application that you
-can use as the skeleton for your new applications.
+Welcome to Caxy's Silex Skeleton - a fully-functional Silex application that
+you can use as the skeleton for your new applications. We use this as a
+platform for learning and experimentation.
 
 This document contains information on how to start using the Silex Skeleton.
 
@@ -13,7 +14,7 @@ Silex uses `Composer`_ to ease the creation of a new project:
 
 .. code-block:: console
 
-    $ composer create-project fabpot/silex-skeleton path/to/install ~2.0@dev
+    $ composer create-project caxy/silex-skeleton path/to/install ~1.0@dev
 
 Composer will create a new Silex project under the `path/to/install` directory.
 
