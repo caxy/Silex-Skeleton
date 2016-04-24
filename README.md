@@ -13,7 +13,7 @@ Creating a Silex Application
 Silex uses [Composer][] to ease the creation of a new project:
 
 ```bash
-composer create-project caxy/silex-skeleton path/to/install ~1.0@dev
+composer create-project caxy/silex-skeleton path/to/install
 ```
 
 Composer will create a new Silex project under the path/to/install directory.
