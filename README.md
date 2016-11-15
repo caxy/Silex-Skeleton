@@ -85,12 +85,12 @@ Providers.
 Enjoy!
 
 [Composer]: http://getcomposer.org/
-[Documentation]: https://silex.readthedocs.org/en/latest/index.html
-[ServiceControllerServiceProvider]: https://silex.readthedocs.org/en/latest/providers/service_controller.html
-[HttpFragmentServiceProvider]: http://silex.readthedocs.org/en/stable/providers/http_fragment.html
-[AssetServiceProvider]: https://silex.readthedocs.org/en/latest/providers/asset.html
-[TwigServiceProvider]: https://silex.readthedocs.org/en/latest/providers/twig.html
+[Documentation]: http://silex.sensiolabs.org/documentation
+[ServiceControllerServiceProvider]: http://silex.sensiolabs.org/doc/master/providers/service_controller.html
+[HttpFragmentServiceProvider]: http://silex.sensiolabs.org/doc/master/providers/http_fragment.html
+[AssetServiceProvider]: http://silex.sensiolabs.org/doc/master/providers/asset.html
+[TwigServiceProvider]: http://silex.sensiolabs.org/doc/master/providers/twig.html
 [WebProfilerServiceProvider]: http://github.com/silexphp/Silex-WebProfiler
-[MonologServiceProvider]: https://silex.readthedocs.org/en/latest/providers/monolog.html
-[VarDumperServiceProvider]: https://silex.readthedocs.org/en/latest/providers/var-dumper.html
-[Providers]: https://silex.readthedocs.org/en/latest/providers.html
+[MonologServiceProvider]: http://silex.sensiolabs.org/doc/master/providers/monolog.html
+[VarDumperServiceProvider]: http://silex.sensiolabs.org/doc/master/providers/var_dumper.html
+[Providers]: http://silex.sensiolabs.org/doc/master/providers.html
